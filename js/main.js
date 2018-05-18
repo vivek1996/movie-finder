@@ -12,7 +12,7 @@ $("form").submit(function(e) {
   let year = $("#date").val();
   //console.log(name, val, year);
   $.ajax({
-    url: `http://www.omdbapi.com/?${val}=${name}&y=${year}&plot=full&apikey=b045eb33`,
+    url: `https://www.omdbapi.com/?${val}=${name}&y=${year}&plot=full&apikey=b045eb33`,
     success: data => {
       //console.log(data);
       display(data);
