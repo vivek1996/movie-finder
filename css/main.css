@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+}
+nav .brand-logo {
+  font-size: 1.8rem;
+}
+
+input[type]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #08D9D6;
+  -webkit-box-shadow: 0 1px 0 0 #08D9D6;
+  box-shadow: 0 1px 0 0 #08D9D6;
+
+  color: white;
+}
+input[type]{
+  color: #fff;
+}
+input.select-dropdown {
+  color: #fff;
+}
+.btn{
+  color: #fff;
+}
+/* ul:not(.browser-default)>li{
+  background: #08D9D6;
+} */
+.dropdown-content li > span {
+  color: black;
+}
+#info {
+  display: none;
+}
+#poster {
+  max-height: 500px;
+}
+#title::after {
+  content: " :-";
+}
+/* #plot{
+  color: rgb(53, 49, 49);
+} */
+.card{
+  color: rgb(53, 49, 49);
+}
+#plot::first-letter {
+  font-size: 4rem;
+  color: rgb(53, 49, 49);
+}
+.line {
+  margin: 0 0.5em;
+  color: #6b6b6b;
+}
+.subtext {
+  color: rgb(102, 97, 97);
+}
+.movecenter{
+  margin: 0 auto;
+}
+.gold{
+  color: gold;
+}
+/* .score{
+    color: white;
+    font-size: 1.2rem;
+    height: 28px;
+    text-align: center;
+    vertical-align: 55%;
+    width: 28px;
+    background: rgb(63, 223, 63);
+} */
+
+#type{
+  text-transform: capitalize;
+}

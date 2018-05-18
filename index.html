@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Finder</title>
+</head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link rel="stylesheet" href="css/main.css">
+
+<body>
+    <nav>
+        <div class="nav-wrapper black">
+            <a href="#" class="brand-logo center light-blue-text">Movie Finder</a>
+
+        </div>
+    </nav>
+    <div class=" container">
+
+        <div class=" row">
+            <h5>Enter the
+                <span class=" blue-text">IMDB Id </span> or
+                <span class=" blue-text"> Movie Name</span> to get the Movie Details</h5>
+            <hr class=" divider">
+            <form id="form">
+                <div class=" col s12">
+                    <div class="input-field col s12 m6">
+                        <input id="name" type="text" class="validate" required autofocus>
+                        <label for="last_name"> Name or IMDB ID</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <select id="searchBy">
+                            <option value="t" selected>Movie Name</option>
+                            <option value="i">IMDB ID</option>
+
+                        </select>
+                        <label>Search By</label>
+                    </div>
+                    <div class=" input-field col s12">
+                        <input id="date" type="number" data-length="4">
+                        <label for="date">Year [ YYYY ] (Optional)</label>
+                    </div>
+
+                    <div class=" center">
+                        <button type="submit" class="waves-effect waves-light btn blue center" id="submit">Fetch Details</button>
+                        <button type="reset" class="waves-effect waves-light btn btn-flat red center">Reset</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="row " id="info">
+                <div class="col s12">
+                    <div class="card hoverable ">
+                        <div class="card-image">
+                            <img id="poster" src="https://fakeimg.pl/350x200/ff0000/000" alt="#">
+                            <span class="card-title" id="type"></span>
+                        </div>
+                        <div class="card-content">
+                            <div class="row">
+                                <div class=" col s10">
+                                    <h5 id="title" class=" blue-grey-text">Title</h5>
+                                    <div class=" subtext">
+                                        <span id="rated"></span>
+                                        <span class=" line">|</span>
+                                        <time id="runtime"></time>
+                                        <span class=" line">|</span>
+                                        <span id="genre"></span>
+                                        <span class=" line">|</span>
+                                        <span id="released"></span>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <i class="material-icons gold">
+                                        star
+                                    </i>
+                                    <span id="rating">8/10</span>
+                                    <span id="votes">1000</span>
+                                </div>
+                            </div>
+
+
+                            <p id="plot" class=" flow-text">Lorem, ipsum dolor.</p>
+                            <hr class=" divider">
+                            <p id="director"></p>
+                            <p id="writer"></p>
+                            <p id="casting"></p>
+                            <span class="red-text darken-3"> Metascore : </span>
+                            <span id="metascore" class="score"></span>
+                            <div>
+                                <span class="red-text darken-3">Box Office :</span>
+                                <span id="boxoffice"></span>
+                            </div>
+                            <div>
+                                <span class="red-text darken-3">Language :</span>
+                                <span id="language"></span>
+                            </div>
+                            <div>
+                                <span class="red-text darken-3">Produced by : </span>
+                                <span id="production"></span>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a id="website" href="#" target="_blank" rel="noopener">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
