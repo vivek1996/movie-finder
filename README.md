@@ -11,6 +11,20 @@
 A simple site giving the movies info using Jquery Ajax function .
 Information is from the [Omdb Api](http://www.omdbapi.com/)
 
+# Problem Statement -
+Check out the following open API url - http://www.omdbapi.com/
+As a solution to this problem, you are supposed to create an application that enables
+user to search movie titles using various parameters - By Imdb Id or title or year.
+It should have only one view containing a search screen which enables users to provide
+these inputs. You have to write Jquery code to change the requests according to
+options selected by user and show the response received(search results) by the API in
+form of cards containing all the information available in the response. If you receive a
+poster image, you have to display that as well and if its not available, it should display a
+dummy picture.
+You may refer the API documentation given on the page for your references and take
+help from them as well. As instructed on this page, you have to generate a free API key
+to use this API.
+
 ## Description
 >The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by users.
 
